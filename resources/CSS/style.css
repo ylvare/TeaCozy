@@ -18,6 +18,11 @@ div{
   border: solid 1px white;
 }
 
+.section.one, .section.two {
+  margin-bottom: 50px;
+}
+
+
 .section .text{
   text-align: center;
   background-color: black;
@@ -30,27 +35,6 @@ div{
   margin: 10px;
 }
 
-.section.two, .section.three{
-  background-color: black;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-}
-.section .boxes{
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.section .box {
-  display: flex;
-  width: 300px;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  margin: 10px;
-}
 
 /* Header */
 
@@ -114,23 +98,34 @@ header nav span {
   transform: translate(-50%, -50%);
 }
 
-.section.two{
+.section.two {
+  position: relative;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
   width: 1000px;
 }
 
-/*
 .section.two .boxes{
   display: flex;
   justify-content: space-around;
+  align-items: center;
   flex-wrap: wrap;
 }
-*/
-
 
 .section.two .boxes .box img{
   display: block;
   width: 100%;
   /*width: 300px;*/
+}
+
+.section.two .box {
+  display: flex;
+  width: 300px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin: 10px;
 }
 
 /*
@@ -150,12 +145,24 @@ header nav span {
 }
 
 .section.three .text{
+  position: relative;
   background-color: transparent;
   color: white;
 }
 
+.section.three .text h2{
+  margin-bottom: 15px;
+}
+
 .section.three .boxes{
   background-color: purple;
+  display:flex;
+  justify-content: center;
+}
+
+.section.three .box {
+  width: 300px;
+  margin: 0 20px;
 }
 
 .section.three .box span{
@@ -163,7 +170,7 @@ header nav span {
   margin: 25px 0;
 }
 
-.section.three .box .title {
+.section.three .box h3 {
   font-weight: bold;
 }
 
@@ -175,3 +182,14 @@ header nav span {
 
 
 /* Footer */
+
+footer {
+  width: 100%;
+  position: relative;
+  top:80px;
+}
+
+footer .text{
+  position: absolute;
+  left: 20px;
+}
