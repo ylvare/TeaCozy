@@ -14,14 +14,9 @@ a{
   text-decoration: underline;
 }
 
-div{
-  border: solid 1px white;
-}
-
 .section.one, .section.two {
   margin-bottom: 50px;
 }
-
 
 .section .text{
   text-align: center;
@@ -31,7 +26,6 @@ div{
 
 .section h2,h4{
   display: inline-flex;
-  border: solid 1px white;
   margin: 10px;
 }
 
@@ -73,13 +67,14 @@ header nav span {
   position: relative;
   top: 69px;
   display: flex;
-  background-color: red;
   width: 1200px;
   flex-direction: column;
   align-items: center;
   margin-left: auto;
   margin-right: auto;
 }
+
+/* Section 1 */
 
 .section.one{
   position: relative;
@@ -97,6 +92,8 @@ header nav span {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+/* Section 2 */
 
 .section.two {
   position: relative;
@@ -116,7 +113,6 @@ header nav span {
 .section.two .boxes .box img{
   display: block;
   width: 100%;
-  /*width: 300px;*/
 }
 
 .section.two .box {
@@ -128,13 +124,7 @@ header nav span {
   margin: 10px;
 }
 
-/*
-.section.two .boxes .box {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 10px;
-} */
+/* Section 3 */
 
 .section.three{
   background-image: url('..\\images\\img-locations-background.jpg');
@@ -155,14 +145,15 @@ header nav span {
 }
 
 .section.three .boxes{
-  background-color: purple;
   display:flex;
   justify-content: center;
 }
 
 .section.three .box {
+  background-color: black;
   width: 300px;
   margin: 0 20px;
+  opacity: 1;
 }
 
 .section.three .box span{
@@ -174,8 +165,9 @@ header nav span {
   font-weight: bold;
 }
 
+/* Section 4 */
+
 .section.four{
-  background-color: black;
   height: 200px;
   width: 100%;
 }
