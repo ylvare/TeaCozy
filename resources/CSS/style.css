@@ -96,10 +96,6 @@ header nav span {
 /* Section 2 */
 
 .section.two {
-  position: relative;
-  background-color: black;
-  display: flex;
-  flex-direction: column;
   width: 1000px;
 }
 
@@ -128,14 +124,12 @@ header nav span {
 
 .section.three{
   background-image: url('..\\images\\img-locations-background.jpg');
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding: 100px 0;
   height: 500px;
   width: 100%;
 }
 
 .section.three .text{
-  position: relative;
   background-color: transparent;
   color: white;
 }
